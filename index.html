@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Death Note</title>
+        <link rel="stylesheet" href="../css/style.css">
+        <script src="../js/script.js"></script>
+    </head>
+
+    <body id="body">
+        <header onclick="abrindoMenu()" id="cabecalho">
+            <img src="../Imagem/deathNote.png"/>
+            <span id="texto">Precione para abrir</span>
+        </header>
+
+        <div id="menu">
+            <button id="procurar"><img src="../Imagem/search1.png" title="Procurar" onclick="buscar()" of></button>
+
+            <button id="adicionar"><img src="../Imagem/plus1.png" alt="" title="Adicionar" onclick="adicionar()"></button>
+
+            <!-- <button id="remover"><img src="../Imagem/trash1.png" alt="" title="Remover"></button> -->
+
+            <button id="todos"><img src="../Imagem/list1.png" alt="" title="Mostrar Todos" onclick="mostrarTodos()"></button>
+        </div>
+
+        <div id="procurarPessoas">
+            <input type="text" name="" id="nome">
+            <button id="buscar" onclick="procurarPessoa()"><img src="../Imagem/search1.png" alt=""></button>
+        </div>
+
+        <div id="addPessoas">
+            <input type="text" id="add">
+            <button onclick="addPessoa()"><img src="../Imagem/plus1.png" alt=""></button>
+        </div>
+
+        <div id="conteudo">
+            <ul>
+                <li id="nomes"></li>
+            </ul>
+
+        </div>
+    </body>
+</html>
