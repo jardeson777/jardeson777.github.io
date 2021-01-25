@@ -33,19 +33,24 @@ function addPessoa(){
 function mostrarTodos(){
     procurarPessoas.style = 'display: none;';
     addPessoas.style = 'display: none;';
+    conteudo.style = 'display: flex;';
+
     if(lista.length == 0){
-        conteudo.style = 'display:flex;';
         document.getElementById('nomes').innerHTML = 'Não possui nenhum nome na lista.';
+        console.log(lista[0]);
     } else {
-        conteudo.style = 'display: flex;';
         var i;
+
         for(i=0; i<lista.length; i++){
-            var liNova = document.createElement('li');
+            var liNova = document.createElement('li').setAttribute('id', 'nomes');
             var conteudoNovo = document.createTextNode('lista[i]');
-            //divNova.appendChild(conteudoNovo); 
+
+            document.liNova.appendChild(conteudoNovo); 
+            console.log(lista[i]);
         }
     }
 }
 
 var lista = [];
+
 // document.getElementById('nomes').innerHTML = lista[0];
