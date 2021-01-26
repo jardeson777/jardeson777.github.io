@@ -27,7 +27,7 @@ function procurarPessoa(){
 
 function addPessoa(){
     var novaPessoa = document.getElementById('add').value;
-    lista.push(novaPessoa);
+    lista.push('<li>' + novaPessoa + '</li>');
 }
 
 function mostrarTodos(){
@@ -35,22 +35,15 @@ function mostrarTodos(){
     addPessoas.style = 'display: none;';
     conteudo.style = 'display: flex;';
 
+    
+
     if(lista.length == 0){
-        document.getElementById('nomes').innerHTML = 'Não possui nenhum nome na lista.';
-        console.log(lista[0]);
+        document.getElementById('nomes').innerHTML = '<li>Não possui nenhum nome na lista.</li>';
     } else {
-        var i;
-
-        for(i=0; i<lista.length; i++){
-            var liNova = document.createElement('li').setAttribute('id', 'nomes');
-            var conteudoNovo = document.createTextNode('lista[i]');
-
-            document.liNova.appendChild(conteudoNovo); 
-            console.log(lista[i]);
-        }
+        document.getElementById('list').innerHTML = lista;
+        var listaUl = document.getElementById('list');
+        listaUl.innerHTML = lista.join('')
     }
 }
 
 var lista = [];
-
-// document.getElementById('nomes').innerHTML = lista[0];
