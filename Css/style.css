@@ -87,7 +87,8 @@ header span{
 
 #procurarPessoas input, #addPessoas input{
 
-   width: 190px;
+   width: 80%;
+   max-width: 670px;
    outline: none;
    border-radius: 10px;
 }
@@ -127,5 +128,4 @@ ul{
 
 li{
     padding: 5px 0px;
-    max-width: 250px;
 }
